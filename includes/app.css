@@ -1,0 +1,236 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #0a402b;
+    -webkit-font-smoothing: antialiased;
+    font-family: New Baskerville,Times,serif;
+    font-weight: 400;
+}
+
+header {
+    margin-top: 50px;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+   /* background: url(http://codecondo.com/wp-content/uploads/2014/04/12-Courses-for-Starting-Your-Web-Development-Journey.jpg) no-repeat center center scroll; */
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.container img {
+    max-width: 100px;
+}
+
+#social {
+    list-style:none;
+    padding-left: 0px !important;
+}
+
+#social li{
+    display: inline;
+}
+
+.main-title {
+    color: white;
+    font-size: 5em;
+}
+
+#about p {
+    text-align: justify;
+}
+
+.sub-item-title {
+    color: #4682B4;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*.vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}*/
+
+p.lead { text-align: center; color: #727878; }
+p.lead a { color: #FFFFFF; text-decoration: underline; }
+p.lead a:hover { text-decoration: none; }
+
+
+
+.jumbotron .overlay { /*background-color: #979390;*/ position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0.75; filter:alpha(opacity=75); z-index: 2; }
+
+.jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
+.jumbotron .container > * { text-align: center; /*color: #FFFFFF;*/ }
+.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
+.jumbotron .container .lead { font-size: 28px; }
+.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+.jumbotron .scroll-down .glyphicon {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-right: 2px;
+    padding-top: 20px;
+
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+.profile-photo {
+    max-width: 300px;
+    border-radius: 5%;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.skills img {
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (min-width: 991px) {
+    .thumbnail img {
+        height: 150px;
+    }
+}
+
+
+
+@font-face {
+    font-family: Moderne Sans;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /*background: #000;*/
+    background: #EBEBE8;
+    background-size: cover;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+div#rocket {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: .4s;
+}
+/*header:hover {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}*/
+h1 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: .5rem;
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+h2 {
+    font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+    font-size: 8vmin;
+    text-align: center;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    color: #fff;
+    font-weight: 100;
+}
+
+.background-white { background: #FFFFFF; }
+.background-gray { background: #EBEBE8; }
+.container { max-width: 1280px; padding: 40px 180px; }
+#social { max-width: 1280px; padding: 40px 180px; }
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon {
+    color: #DFE0E0;
+    font-size: 14px;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
+
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; }
+
+#contact { padding-bottom: 200px; }
+#contact h2, #contact .row * { color: #434242; }
+#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
+#contact a .icon { float: left; margin-right: 20px; }
+#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+
+#ftr{background:#1d1d22; }
+
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#toTop .fa {margin-right: 5px;}
+iframe {
+    width: 100%;
+    border: 0;
+    min-height: 80%;
+    height: 600px;
+    display: flex;
+}
+
+#demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+#demo a:hover {
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
